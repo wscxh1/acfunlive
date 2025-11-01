@@ -62,8 +62,11 @@ func (s streamer) getDanmu(ctx context.Context, info liveInfo) {
 	ac, err := acfundanmu.NewAcFunLive(acfundanmu.SetLiverUID(int64(s.UID)), acfundanmu.SetCookies(cookies))
 	checkErr(err)
 	_ = ac.StartDanmu(ctx, false)
-	if s.Danmu {
+	if s.Danmu && s.Record {
 		ac.WriteASS(ctx, info.cfg, info.assFile, true)
+		defer s.moveFile(info.assFile)
+	} else if s.Danmu && !s.Record {
+		ac.WriteASSWithOffsetOnly(ctx, info.cfg, info.assFile, true)
 		defer s.moveFile(info.assFile)
 	} else if s.KeepOnline {
 		for {
@@ -92,8 +95,10 @@ Outer:
 					ac, err := acfundanmu.NewAcFunLive(acfundanmu.SetLiverUID(int64(s.UID)), acfundanmu.SetCookies(cookies))
 					checkErr(err)
 					_ = ac.StartDanmu(ctx, false)
-					if s.Danmu {
+					if s.Danmu && s.Record {
 						ac.WriteASS(ctx, info.cfg, info.assFile, false)
+					} else if s.Danmu && !s.Record {
+						ac.WriteASSWithOffsetOnly(ctx, info.cfg, info.assFile, false)
 					} else if s.KeepOnline {
 						for {
 							if danmu := ac.GetDanmu(); danmu == nil {
