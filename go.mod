@@ -19,7 +19,7 @@ require (
 	go.uber.org/atomic v1.11.0
 )
 
-replace github.com/orzogc/acfundanmu v0.0.0-20240910132643-93679007a97d => github.com/wscxh1/acfundanmu v0.0.0-20251101074806-5386ce3171ba
+replace github.com/orzogc/acfundanmu v0.0.0-20240910132643-93679007a97d => github.com/wscxh1/acfundanmu v0.0.0-20251101083637-81e03acb63fa
 
 require (
 	facette.io/natsort v0.0.0-20181210072756-2cd4dd1e2dcb // indirect
@@ -48,15 +48,15 @@ require (
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 // indirect
 	github.com/orzogc/fastws v1.0.5-0.20230809182400-6c9094d8c52e // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
-	github.com/pierrec/lz4/v4 v4.1.21 // indirect
+	github.com/pierrec/lz4/v4 v4.1.22 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/segmentio/asm v1.2.1 // indirect
 	github.com/segmentio/encoding v0.5.3 // indirect
 	github.com/sergeymakinen/go-bmp v1.0.0 // indirect
 	github.com/sergeymakinen/go-ico v1.0.0 // indirect
 	github.com/tadvi/systray v0.0.0-20190226123456-11a2b8fa57af // indirect
-	github.com/tidwall/gjson v1.17.3 // indirect
-	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/gjson v1.18.0 // indirect
+	github.com/tidwall/match v1.2.0 // indirect
 	github.com/tidwall/pretty v1.2.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
@@ -65,9 +65,9 @@ require (
 	go.opentelemetry.io/otel/trace v1.38.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/image v0.20.0 // indirect
+	golang.org/x/image v0.32.0 // indirect
 	golang.org/x/net v0.46.0 // indirect
-	golang.org/x/sync v0.10.0 // indirect
+	golang.org/x/sync v0.17.0 // indirect
 	golang.org/x/sys v0.37.0 // indirect
 	google.golang.org/protobuf v1.36.10 // indirect
 )
