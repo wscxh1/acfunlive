@@ -19,7 +19,7 @@ require (
 	go.uber.org/atomic v1.11.0
 )
 
-replace github.com/orzogc/acfundanmu v0.0.0-20240910132643-93679007a97d => github.com/wscxh1/acfundanmu v0.0.0-20251101083637-81e03acb63fa
+replace github.com/orzogc/acfundanmu v0.0.0-20240910132643-93679007a97d => github.com/wscxh1/acfundanmu v0.0.0-20251101094116-9ada3b1fc7e6
 
 require (
 	facette.io/natsort v0.0.0-20181210072756-2cd4dd1e2dcb // indirect
